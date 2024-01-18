@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "lib": ["ESNext"],
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "inlineSourceMap": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "target": "ESNext",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "strict": true,
+    "incremental": true,
+    "skipDefaultLibCheck": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "jsx-slack",
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules", "./node_modules/@types", "./lib/types"],
+    "paths": {
+      "@/*": ["./lib/*"]
+    }
+  },
+  "include": ["./lib"],
+  "exclude": ["./.*", "./node_modules", "./dist"]
+}
